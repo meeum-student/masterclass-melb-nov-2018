@@ -43,6 +43,21 @@
   --font-size-heading-small: 16px;
 }
 
+@media screen and (min-width: 800px) {
+
+
+  :root {
+
+    --font-size-site-title: 54px;
+    --font-size-page-title: 80px;
+    --font-size-section-title: 48px;
+
+    --padder: 2%;
+  }
+
+
+}
+
 /* ----------------------------- GLOBAL DEFAULTS */
 * {
   box-sizing: border-box;
@@ -85,13 +100,14 @@ h3 {
 }
 
 a {
-    color: var(--error-color);
-    transition: var(--transition-time);
+  color: var(--error-color);
+  transition: var(--transition-time);
 }
 
 a:hover {
-    color: var(--strong-text-color);
+  color: var(--strong-text-color);
 }
+
 /* ----------------------------- LAYOUTS */
 
 .layout-wide {
