@@ -30,7 +30,7 @@
     --padder: 3%;
     --spacer: 20px;
     --spacer-large: 80px;
-    --transition-time: 0.3s;
+    --transition-time: .3s;
   
     --area-wide: 1200px;
   
@@ -112,6 +112,86 @@ footer {
     background-color: var(--alternative-bg-color);
 }
 
+.footer-subscribe {
+    background-color: var(--secondary-bg-color);
+    padding-top: var(--spacer-large);
+    padding-bottom: var(--spacer-large);
+    text-align: center;
+    
+}
+
+.footer-notices {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+
+}
+
+.footer-notices .layout-wide {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social-links a {
+    display: block;
+    transition: var(--transition-time);
+
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
 /* ----------------------------- FORMS */
+
+/* subscription form */
+label {
+    display: block;
+    font-weight: bold;
+}
+ input[type="text"],
+ input[type="email"] {
+     margin-bottom: var(--spacer);
+     max-width: 100%;
+     width: 480px;
+     padding: 10px;
+ }
+
+input[type="submit"] {
+    background-color: var(--color-light-green);
+    border: none;
+    padding: var(--spacer);
+    border-radius: 30px;
+    min-width: 200px;
+    text-transform: uppercase;
+    transition: var(--transition-time);
+    font-family: var(--font-heading);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--strong-text-color);
+    color: var(--alternative-text-color);
+}
+
 
 /* ----------------------------- MODULES */
